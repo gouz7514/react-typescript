@@ -9,7 +9,7 @@ npx create-react-app "프로젝트명" --template typescript
 ### tsx
 Typescript file writtern using JSX syntax<br />
 
-- tsx 파일 만들어보기
+### tsx 파일 만들어보기
 ```javascript
 // Textfield.tsx
 import React from 'react'
@@ -39,3 +39,20 @@ export default Textfield
 ```
 
 `React.FC` : 해당 컴포넌트가 리액트의 함수형 컴포넌트라는 것을 명시<br />
+
+### useState with typescript
+```javascript
+// ...
+
+interface TextNode {
+  text: string
+}
+
+const Textfield: React.FC<Props> = () => {
+  const [count, setCount] = useState<TextNode>({ text: 'hello'})
+  
+  setCount({text: 'test'})
+
+  // ...
+}
+```
