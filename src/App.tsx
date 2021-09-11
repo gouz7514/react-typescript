@@ -1,11 +1,13 @@
 import React from 'react';
+import Textfield from './Textfield';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        Learn React
-      </header>
+    <div>
+      <Textfield
+        text='hello'
+        person={{firstName: '', lastName: ''}}
+      />
     </div>
   );
 }
