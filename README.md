@@ -56,3 +56,17 @@ const Textfield: React.FC<Props> = () => {
   // ...
 }
 ```
+
+### useRef with typescript
+```javascript
+// ...
+
+const inputRef = useRef<HTMLInputElement>(null)
+const divRef = useRef<HTMLDivElement>(null)
+
+return (
+  <div ref={divRef}>
+    <input ref={inputRef}/>
+  </div>
+)
+```
