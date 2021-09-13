@@ -70,3 +70,22 @@ return (
   </div>
 )
 ```
+
+### useReducer with typescript
+시작하기 전 [useReducer란](https://react.vlpt.us/basic/20-useReducer.html)<br/>
+reducer는 현재 상태와 액션 객체를 파라미터로 받아와서 새로운 상태를 반환해주는 함수.
+```javascript
+function reducer(state, action) {
+  // 새로운 상태를 만드는 로직
+  // const nextState = ...
+  return nextState;
+}
+```
+reducer에서 반환하는 상태는 곧 컴포넌트가 지닐 새로운 상태<br/>
+
+**`useReducer`의 사용법**
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+***
+
