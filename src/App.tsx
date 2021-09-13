@@ -7,6 +7,9 @@ const App: React.FC = () => {
       <Textfield
         text='hello'
         person={{firstName: '', lastName: ''}}
+        handleChange={e => {
+          e.preventDefault();
+        }}
       />
     </div>
   );
