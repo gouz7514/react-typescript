@@ -87,5 +87,6 @@ reducer에서 반환하는 상태는 곧 컴포넌트가 지닐 새로운 상태
 ```javascript
 const [state, dispatch] = useReducer(reducer, initialState);
 ```
+`state`는 우리가 앞으로 컴포넌트에서 사용할 수 있는 상태, `dispatch`는 액션을 발생시키는 함수
 ***
-
+typescript와 같이 사용을 위해서는 state와 action의 type을 정의해주면 된다. 자세한 내용은 [코드](./src/ReducerExample.tsx) 참고
